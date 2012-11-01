@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+<!--#include file="Head.html"-->
+
+<body bgcolor="#FFFFFF" leftmargin=0 topmargin=0 text="black" link="#0000FF"
+vlink="#000000" alink="#000000">
+
+<!--#include file="Table.html"-->
+
+<tr>
+<!--#include file="SideBar.html"-->
+
+    <td width="550" valign="top" bgcolor="#FFFFFF">
+    <div align="left">
+    <b>**NOTE**</b>:
+    Installing GCC-XML has been significantly
+    simplified by combining a patched GCC with the GCC-XML front-end
+    in a single source tree.  This page is provided for historical
+    purposes.  Please see the
+    <a href="Install.html">current installation instructions</a>
+    if you are new to GCC-XML.
+    <p>
+    Installing GCC-XML involves two components:
+    <ol>
+      <li> A front-end executable that makes GCC-XML easy to run
+           (<code>gccxml</code>).
+      <li> The GCC exectutable with the XML-dump extension
+           (<code>gccxml_cc1plus</code>).
+    </ol>
+    Each component may need to be built and installed separately.  On
+    Windows, there is a pre-compiled package with an installation
+    program that installs both components.  Refer to the <a
+    href="OldDownload.html">Download</a> page to get it.
+    <p>
+    Before you install GCC-XML, you should check that your compiler is
+    supported.  In this case, compiler support refers to what
+    compilers can be simulated, not what compilers can be used to
+    build GCC-XML.  See the page on <a href="Running.html">Running</a>
+    GCC-XML for a list of supported compilers.
+    <p>
+
+    <h2>The <code>gccxml_cc1plus</code> Executable</h2>
+    The first part to build and install is the patched GCC executable,
+    which will become <code>gccxml_cc1plus</code>.
+
+    <h3>Windows</h3>
+    In order to build <code>gccxml_cc1plus</code> on Windows, you will
+    need the <a href="http://sources.redhat.com/cygwin/">Cygwin</a>
+    tools with its version of GCC.  Once you have obtained these,
+    follow the UNIX instructions to build <code>gccxml_cc1plus</code>.
+    <p>
+    If installing cygwin is not an option, you may wish to just get
+    the pre-built binary copy of the executable available on the <a
+    href="OldDownload.html">Download</a> page.  The binary copy of
+    <code>gccxml_cc1plus</code> does not include the GCC-XML front-end
+    (but the installer download includes both).  You may still build
+    the front-end yourself without Cygwin.
+
+    <h3>UNIX & Cygwin</h3>
+
+    There are two ways to build the <code>gccxml_cc1plus</code>
+    executable.  Choose one of these:
+    <ul>
+      <li> Download the pre-patched source to GCC and build it.
+           See the <a href="OldDownload.html">Download</a> page
+           to get it.  This is the recommended approach for UNIX users, and
+           is detailed below.
+
+      <li> Download the entire GCC 3.0.4 compiler source from
+           <a href="http://gcc.gnu.org">GCC's web site</a>, apply the
+           GCC-XML patch, and install the compiler with the extension
+           built in.  See the page on <a
+           href="Patching_GCC.html">Patching GCC</a> for instructions.
+    </ul>
+    Follow the instructions below to build the part of GCC you need to
+    get the <code>gccxml_cc1plus</code> executable.  It is assumed
+    that you have extracted the pre-patched GCC source in your home
+    directory, so the source appears in
+    <code>~/gccxml-0.4.2-cc1plus-304</code>.  You will build the program
+    in a parallel directory called <code>~/gccxml-0.4.2-cc1plus-304-build</code>.
+    <ol>
+      <li>
+        Configure and build GCC (but don't install it).  Don't bother
+        with a bootstrap, just run <code>make</code> after the
+        configuration step.  Example:
+        <blockquote>
+          <code>
+            $ cd ~<br>
+            $ mkdir gccxml-0.4.2-cc1plus-304-build<br>
+            $ cd gccxml-0.4.2-cc1plus-304-build<br>
+            $ ../gccxml-0.4.2-cc1plus-304/configure \<br>
+                --enable-languages=c++ \<br>
+                --without-libstdcxx<br>
+            $ make<br>
+          </code>
+        </blockquote>
+        This example builds all of GCC's C++ compiler and its standard library,
+        but all you really need is one exectuable.  If you want to try to
+        build the minimal portion of GCC needed, try
+       <a href="direct_build.html">these</a> instructions.
+        If you want more detailed instructions about building GCC,
+        go <a href="http://gcc.gnu.org/install/index.html">here</a>.
+      <li> <a name="ExeStep2"></a>
+
+        When the build finishes, find the file
+        <code>~/gccxml-0.4.2-cc1plus-304-build/gcc/cc1plus</code>.
+        This program is GCC's C++ compiler which is run by the
+        <code>gcc</code> driver program for C++ sources.  It does not
+        automatically add any preprocessor macros (like
+        <code>__GNUC__</code>), so we can use it to exactly control
+        how our source is parsed.  This is the only part of the
+        compiler you need, and is the <code>gccxml_cc1plus</code>
+        executable.  Copy this program to the directory
+        <code>PREFIX/bin</code>, and rename it to
+        <code>gccxml_cc1plus</code> (keep the .exe extension under
+        Cygwin).  Here, "<code>PREFIX</code>" refers to your GCC-XML
+        front-end installation prefix, such as <code>/usr/local</code>
+        (see below).
+
+    </ol>
+    <a name="FrontEnd"></a>
+    <h2>The <code>gccxml</code> Front-End</h2>
+    The front-end program wraps the <code>gccxml_cc1plus</code>
+    exectuable and makes it easy to run by automatically determining
+    the set of flags needed to make GCC-XML parse your code just as
+    your compiler would.  See the page on <a
+    href="Running.html">Running</a> GCC-XML for details.
+    <p>
+    In order to build and install the front-end, you will need a copy
+    of the GCC-XML source.  See the <a
+    href="OldDownload.html">Download</a> page to get it.  The standard
+    way to build the GCC-XML front-end is to use <a
+    href="http://www.cmake.org">CMake</a> (version 1.2 or higher).
+    CMake will generate an appropriate build system for your platform
+    and compiler.  Binaries are available on the CMake web page for
+    many platforms.
+    <p>
+    <h3>Windows</h3>
+    Run the CMakeSetup GUI to generate the build system for your
+    compiler.  Load the resulting project file and build it.  Place
+    the <code>gccxml_cc1plus</code> executable (built above) at the
+    top of your build tree.  You should be able to run the
+    <code>gccxml</code> executable directly from the build directory.
+    Currently there is no support for installing GCC-XML from a
+    Windows build.  If you want to install it, use the installer
+    program available on the <a href="OldDownload.html">Download</a>
+    page.
+    <h3>UNIX & Cygwin</h3>
+    These instructions assume that the front-end will be built
+    out-of-source (recommended), but an in-source build should also
+    work.  The commands below assume that you have extracted the
+    source code into your home directory as <code>~/gccxml-0.4.2</code>
+    <blockquote>
+      <code>
+        $ mkdir gccxml-0.4.2-build<br>
+        $ cd gccxml-0.4.2-build<br>
+        $ cmake ../gccxml-0.4.2<br>
+        $ make<br>
+        $ make install<br>
+      </code>
+    </blockquote>
+    You can change the install prefix by adding
+    <code>-DCMAKE_INSTALL_PREFIX:PATH=/installation/path</code> to the
+    CMake command (default is <code>/usr/local</code>).  If you are
+    familiar with CMake, you should probably use the
+    <code>ccmake</code> curses dialog instead.
+    <p>
+    This will install an executable called "<code>gccxml</code>" in
+    <code>PREFIX/bin</code>.  You should place the
+    <code>gccxml_cc1plus</code> executable next to it in this
+    directory.  Support library files will also be installed in
+    <code>PREFIX/share/GCC_XML</code>.
+    <p>
+    The "<code>make install</code>" step is optional.  If you place
+    the <code>gccxml_cc1plus</code> executable in your build tree
+    instead, then you will be able to run <code>gccxml</code> directly
+    from there.
+    </div>
+    </td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

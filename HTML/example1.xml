@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<GCC_XML>
+  <Namespace id="_1" name="::" members="_2 _3 _4 "/>
+  <Function id="_2" name="main" returns="_5" context="_1" location="f0:8"/>
+  <Function id="_3" name="a_function" returns="_5" context="_1" location="f0:4">
+    <Argument name="f" type="_6"/>
+    <Argument name="e" type="_4"/>
+  </Function>
+  <Struct id="_4" name="EmptyClass" context="_1" location="f0:1" members="_7 _8 " bases=""/>
+  <FundamentalType id="_5" name="int"/>
+  <FundamentalType id="_6" name="float"/>
+  <Constructor id="_7" name="EmptyClass" context="_4" location="f0:1">
+    <Argument name="_ctor_arg" type="_9"/>
+  </Constructor>
+  <Constructor id="_8" name="EmptyClass" context="_4" location="f0:1"/>
+  <ReferenceType id="_9" type="_4c"/>
+  <File id="f0" name="example1.cxx"/>
+</GCC_XML>

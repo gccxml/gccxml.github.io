@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<GCC_XML>
+  <Class id="_1" name="ostream" context="_2" location="f0:45" members="_3 _4 _5 _6 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 _24 _25 _26 _27 _28 _29 _30 _31 _32 _33 _34 _35 _36 _37 _38 _39 _40 _41 _42 _43 " bases="public:_44 "/>
+  <Field id="_3" name="_vptr.ostream" type="_45" context="_1" location="f0:45"/>
+  <Constructor id="_4" name="ostream" context="_1" location="f0:45">
+    <Argument name="_ctor_arg" type="_46"/>
+  </Constructor>
+  <Destructor id="_5" name="ostream" virtual="1" context="_1" location="f0:230">
+  </Destructor>
+  <Method id="_6" name="do_osfx" returns="_47" access="private" context="_1" location="f0:47" extern="1"/>
+  <Constructor id="_7" name="ostream" context="_1" location="f0:49" extern="1">
+  </Constructor>
+  <Constructor id="_8" name="ostream" context="_1" location="f0:50" extern="1">
+    <Argument name="sb" type="_48"/>
+    <Argument name="tied" type="_49" default="0"/>
+  </Constructor>
+  <Method id="_9" name="opfx" returns="_50" context="_1" location="f0:51" extern="1"/>
+  <Method id="_10" name="osfx" returns="_47" context="_1" location="f0:54" extern="1"/>
+  <Method id="_11" name="flush" returns="_51" context="_1" location="f0:57" extern="1"/>
+  <Method id="_12" name="put" returns="_51" context="_1" location="f0:58" extern="1">
+    <Argument name="c" type="_52"/>
+  </Method>
+  <Method id="_13" name="write" returns="_51" context="_1" location="f0:64" extern="1">
+    <Argument name="s" type="_53"/>
+    <Argument name="n" type="_50"/>
+  </Method>
+  <Method id="_14" name="write" returns="_51" context="_1" location="f0:66" extern="1">
+    <Argument name="s" type="_54"/>
+    <Argument name="n" type="_50"/>
+  </Method>
+  <Method id="_15" name="write" returns="_51" context="_1" location="f0:68" extern="1">
+    <Argument name="s" type="_55"/>
+    <Argument name="n" type="_50"/>
+  </Method>
+  <Method id="_16" name="write" returns="_51" context="_1" location="f0:70" extern="1">
+    <Argument name="s" type="_56"/>
+    <Argument name="n" type="_50"/>
+  </Method>
+  <Method id="_17" name="seekp" returns="_51" context="_1" location="f0:71" extern="1">
+    <Argument type="_57"/>
+  </Method>
+  <Method id="_18" name="seekp" returns="_51" context="_1" location="f0:72" extern="1">
+    <Argument type="_57"/>
+    <Argument type="_58"/>
+  </Method>
+  <Method id="_19" name="tellp" returns="_57" context="_1" location="f0:73" extern="1"/>
+  <Method id="_20" name="form" returns="_51" context="_1" location="f0:74" extern="1">
+    <Argument name="format" type="_53"/>
+    <Ellipsis/>
+  </Method>
+  <Method id="_21" name="vform" returns="_51" context="_1" location="f0:75" extern="1">
+    <Argument name="format" type="_53"/>
+    <Argument name="args" type="_59"/>
+  </Method>
+  <OperatorMethod id="_22" name="&lt;&lt;" returns="_51" context="_1" location="f0:77" extern="1">
+    <Argument name="c" type="_52"/>
+  </OperatorMethod>
+  <OperatorMethod id="_23" name="&lt;&lt;" returns="_51" context="_1" location="f0:78" extern="1">
+    <Argument name="c" type="_60"/>
+  </OperatorMethod>
+  <OperatorMethod id="_24" name="&lt;&lt;" returns="_51" context="_1" location="f0:79" extern="1">
+    <Argument name="c" type="_61"/>
+  </OperatorMethod>
+  <OperatorMethod id="_25" name="&lt;&lt;" returns="_51" context="_1" location="f0:80" extern="1">
+    <Argument name="s" type="_53"/>
+  </OperatorMethod>
+  <OperatorMethod id="_26" name="&lt;&lt;" returns="_51" context="_1" location="f0:82" extern="1">
+    <Argument name="s" type="_54"/>
+  </OperatorMethod>
+  <OperatorMethod id="_27" name="&lt;&lt;" returns="_51" context="_1" location="f0:84" extern="1">
+    <Argument name="s" type="_55"/>
+  </OperatorMethod>
+  <OperatorMethod id="_28" name="&lt;&lt;" returns="_51" context="_1" location="f0:85" extern="1">
+    <Argument name="p" type="_56"/>
+  </OperatorMethod>
+  <OperatorMethod id="_29" name="&lt;&lt;" returns="_51" context="_1" location="f0:86" extern="1">
+    <Argument name="n" type="_50"/>
+  </OperatorMethod>
+  <OperatorMethod id="_30" name="&lt;&lt;" returns="_51" context="_1" location="f0:87" extern="1">
+    <Argument name="n" type="_62"/>
+  </OperatorMethod>
+  <OperatorMethod id="_31" name="&lt;&lt;" returns="_51" context="_1" location="f0:88" extern="1">
+    <Argument name="n" type="_63"/>
+  </OperatorMethod>
+  <OperatorMethod id="_32" name="&lt;&lt;" returns="_51" context="_1" location="f0:89" extern="1">
+    <Argument name="n" type="_64"/>
+  </OperatorMethod>
+  <OperatorMethod id="_33" name="&lt;&lt;" returns="_51" context="_1" location="f0:91" extern="1">
+    <Argument name="n" type="_57"/>
+  </OperatorMethod>
+  <OperatorMethod id="_34" name="&lt;&lt;" returns="_51" context="_1" location="f0:92" extern="1">
+    <Argument name="n" type="_65"/>
+  </OperatorMethod>
+  <OperatorMethod id="_35" name="&lt;&lt;" returns="_51" context="_1" location="f0:94" extern="1">
+    <Argument name="n" type="_66"/>
+  </OperatorMethod>
+  <OperatorMethod id="_36" name="&lt;&lt;" returns="_51" context="_1" location="f0:95" extern="1">
+    <Argument name="n" type="_67"/>
+  </OperatorMethod>
+  <OperatorMethod id="_37" name="&lt;&lt;" returns="_51" context="_1" location="f0:97" extern="1">
+    <Argument name="b" type="_68"/>
+  </OperatorMethod>
+  <OperatorMethod id="_38" name="&lt;&lt;" returns="_51" context="_1" location="f0:99" extern="1">
+    <Argument name="n" type="_69"/>
+  </OperatorMethod>
+  <OperatorMethod id="_39" name="&lt;&lt;" returns="_51" context="_1" location="f0:100" extern="1">
+    <Argument name="n" type="_70"/>
+  </OperatorMethod>
+  <OperatorMethod id="_40" name="&lt;&lt;" returns="_51" context="_1" location="f0:102" extern="1">
+    <Argument name="n" type="_71"/>
+  </OperatorMethod>
+  <OperatorMethod id="_41" name="&lt;&lt;" returns="_51" context="_1" location="f0:106" extern="1">
+    <Argument name="func" type="_72"/>
+  </OperatorMethod>
+  <OperatorMethod id="_42" name="&lt;&lt;" returns="_51" context="_1" location="f0:107" extern="1">
+    <Argument name="func" type="_73"/>
+  </OperatorMethod>
+  <OperatorMethod id="_43" name="&lt;&lt;" returns="_51" context="_1" location="f0:108" extern="1">
+    <Argument type="_48"/>
+  </OperatorMethod>
+  <Class id="_44" name="ios" context="_2" location="f1:126" members="_74 _76 _77 _78 _80 _81 _82 _58 _83 _84 _85 _86 _87 _88 _89 _90 _91 _92 _93 _94 _95 _96 _97 _98 _99 _100 _101 _102 _103 _104 _105 _106 _107 _108 _109 _110 _111 _112 _113 _114 _115 _116 _117 _118 _119 _120 _121 _122 _123 _124 _125 _126 _127 " bases="public:_128 "/>
+  <PointerType id="_45" type="_129"/>
+  <ReferenceType id="_46" type="_1c"/>
+  <FundamentalType id="_47" name="void"/>
+  <PointerType id="_48" type="_130"/>
+  <PointerType id="_49" type="_1"/>
+  <FundamentalType id="_50" name="int"/>
+  <ReferenceType id="_51" type="_1"/>
+  <FundamentalType id="_52" name="char"/>
+  <PointerType id="_53" type="_52c"/>
+  <PointerType id="_54" type="_60c"/>
+  <PointerType id="_55" type="_61c"/>
+  <PointerType id="_56" type="_47c"/>
+  <FundamentalType id="_57" name="long long int"/>
+  <EnumerationType id="_58" name="seek_dir" location="f1:149">
+    <EnumValue name="beg" init="0"/>
+    <EnumValue name="cur" init="1"/>
+    <EnumValue name="end" init="2"/>
+  </EnumerationType>
+  <PointerType id="_59" type="_47"/>
+  <FundamentalType id="_60" name="unsigned char"/>
+  <FundamentalType id="_61" name="signed char"/>
+  <FundamentalType id="_62" name="unsigned int"/>
+  <FundamentalType id="_63" name="long int"/>
+  <FundamentalType id="_64" name="long unsigned int"/>
+  <FundamentalType id="_65" name="long long unsigned int"/>
+  <FundamentalType id="_66" name="short int"/>
+  <FundamentalType id="_67" name="short unsigned int"/>
+  <FundamentalType id="_68" name="bool"/>
+  <FundamentalType id="_69" name="double"/>
+  <FundamentalType id="_70" name="float"/>
+  <FundamentalType id="_71" name="long double"/>
+  <PointerType id="_72" type="_131"/>
+  <PointerType id="_73" type="_132"/>
+  <Field id="_74" name="_vptr.ios" type="_45" context="_44" location="f1:126"/>
+  <FundamentalType id="_75" name="__fmtflags"/>
+  <Typedef id="_76" name="fmtflags" type="_64" context="_44" location="f1:130"/>
+  <Typedef id="_77" name="iostate" type="_50" context="_44" location="f1:131"/>
+  <Typedef id="_78" name="openmode" type="_50" context="_44" location="f1:132"/>
+  <FundamentalType id="_79" name="__ssize_t"/>
+  <Typedef id="_80" name="streamsize" type="_50" context="_44" location="f1:133"/>
+  <EnumerationType id="_81" name="io_state" location="f1:134">
+    <EnumValue name="goodbit" init="0"/>
+    <EnumValue name="eofbit" init="1"/>
+    <EnumValue name="failbit" init="2"/>
+    <EnumValue name="badbit" init="4"/>
+  </EnumerationType>
+  <EnumerationType id="_82" name="open_mode" location="f1:139">
+    <EnumValue name="in" init="1"/>
+    <EnumValue name="out" init="2"/>
+    <EnumValue name="ate" init="4"/>
+    <EnumValue name="app" init="8"/>
+    <EnumValue name="trunc" init="16"/>
+    <EnumValue name="nocreate" init="32"/>
+    <EnumValue name="noreplace" init="64"/>
+    <EnumValue name="bin" init="128"/>
+    <EnumValue name="binary" init="128"/>
+  </EnumerationType>
+  <Typedef id="_83" name="seekdir" type="_58" context="_44" location="f1:150"/>
+  <EnumerationType id="_84" name="._2" location="f1:152">
+    <EnumValue name="skipws" init="1"/>
+    <EnumValue name="left" init="2"/>
+    <EnumValue name="right" init="4"/>
+    <EnumValue name="internal" init="8"/>
+    <EnumValue name="dec" init="16"/>
+    <EnumValue name="oct" init="32"/>
+    <EnumValue name="hex" init="64"/>
+    <EnumValue name="showbase" init="128"/>
+    <EnumValue name="showpoint" init="256"/>
+    <EnumValue name="uppercase" init="512"/>
+    <EnumValue name="showpos" init="1024"/>
+    <EnumValue name="scientific" init="2048"/>
+    <EnumValue name="fixed" init="4096"/>
+    <EnumValue name="unitbuf" init="8192"/>
+    <EnumValue name="stdio" init="16384"/>
+  </EnumerationType>
+  <EnumerationType id="_85" name="._3" location="f1:163">
+    <EnumValue name="basefield" init="112"/>
+    <EnumValue name="floatfield" init="6144"/>
+    <EnumValue name="adjustfield" init="14"/>
+  </EnumerationType>
+  <Class id="_86" name="Init" context="_44" location="f1:251" members="_133 _134 " bases=""/>
+  <OperatorMethod id="_87" name="=" returns="_135" access="private" context="_44" location="f1:127" extern="1">
+    <Argument type="_135"/>
+  </OperatorMethod>
+  <Constructor id="_88" name="ios" access="private" context="_44" location="f1:128" extern="1">
+    <Argument type="_136"/>
+  </Constructor>
+  <Method id="_89" name="tie" returns="_49" const="1" context="_44" location="f1:179" extern="1"/>
+  <Method id="_90" name="tie" returns="_49" context="_44" location="f1:180" extern="1">
+    <Argument name="val" type="_49"/>
+  </Method>
+  <Method id="_91" name="fill" returns="_137" const="1" context="_44" location="f1:183" extern="1"/>
+  <Method id="_92" name="fill" returns="_137" context="_44" location="f1:185" extern="1">
+    <Argument name="newf" type="_137"/>
+  </Method>
+  <Method id="_93" name="flags" returns="_64" const="1" context="_44" location="f1:186" extern="1"/>
+  <Method id="_94" name="flags" returns="_64" context="_44" location="f1:187" extern="1">
+    <Argument name="new_val" type="_64"/>
+  </Method>
+  <Method id="_95" name="precision" returns="_50" const="1" context="_44" location="f1:189" extern="1"/>
+  <Method id="_96" name="precision" returns="_50" context="_44" location="f1:190" extern="1">
+    <Argument name="newp" type="_50"/>
+  </Method>
+  <Method id="_97" name="setf" returns="_64" context="_44" location="f1:193" extern="1">
+    <Argument name="val" type="_64"/>
+  </Method>
+  <Method id="_98" name="setf" returns="_64" context="_44" location="f1:196" extern="1">
+    <Argument name="val" type="_64"/>
+    <Argument name="mask" type="_64"/>
+  </Method>
+  <Method id="_99" name="unsetf" returns="_64" context="_44" location="f1:199" extern="1">
+    <Argument name="mask" type="_64"/>
+  </Method>
+  <Method id="_100" name="width" returns="_50" const="1" context="_44" location="f1:202" extern="1"/>
+  <Method id="_101" name="width" returns="_50" context="_44" location="f1:203" extern="1">
+    <Argument name="val" type="_50"/>
+  </Method>
+  <Method id="_102" name="_throw_failure" returns="_47" const="1" context="_44" location="f1:208" extern="1"/>
+  <Method id="_103" name="clear" returns="_47" context="_44" location="f1:210" extern="1">
+    <Argument name="state" type="_50" default="0"/>
+  </Method>
+  <Method id="_104" name="set" returns="_47" context="_44" location="f1:213" extern="1">
+    <Argument name="flag" type="_50"/>
+  </Method>
+  <Method id="_105" name="setstate" returns="_47" context="_44" location="f1:215" extern="1">
+    <Argument name="flag" type="_50"/>
+  </Method>
+  <Method id="_106" name="good" returns="_50" const="1" context="_44" location="f1:217" extern="1"/>
+  <Method id="_107" name="eof" returns="_50" const="1" context="_44" location="f1:218" extern="1"/>
+  <Method id="_108" name="fail" returns="_50" const="1" context="_44" location="f1:219" extern="1"/>
+  <Method id="_109" name="bad" returns="_50" const="1" context="_44" location="f1:220" extern="1"/>
+  <Method id="_110" name="rdstate" returns="_50" const="1" context="_44" location="f1:221" extern="1"/>
+  <Converter id="_111" name="operator Pv" returns="_59" const="1" context="_44" location="f1:222" extern="1"/>
+  <OperatorMethod id="_112" name="!" returns="_50" const="1" context="_44" location="f1:223" extern="1"/>
+  <Method id="_113" name="exceptions" returns="_50" const="1" context="_44" location="f1:224" extern="1"/>
+  <Method id="_114" name="exceptions" returns="_47" context="_44" location="f1:225" extern="1">
+    <Argument name="enable" type="_50"/>
+  </Method>
+  <Method id="_115" name="rdbuf" returns="_48" const="1" context="_44" location="f1:229" extern="1"/>
+  <Method id="_116" name="rdbuf" returns="_48" context="_44" location="f1:230" extern="1">
+    <Argument name="_s" type="_48"/>
+  </Method>
+  <Method id="_117" name="sync_with_stdio" returns="_50" static="1" context="_44" location="f1:233" extern="1">
+    <Argument name="on" type="_50"/>
+  </Method>
+  <Method id="_118" name="sync_with_stdio" returns="_47" static="1" context="_44" location="f1:234" extern="1"/>
+  <Method id="_119" name="bitalloc" returns="_64" static="1" context="_44" location="f1:235" extern="1"/>
+  <Method id="_120" name="xalloc" returns="_50" static="1" context="_44" location="f1:236" extern="1"/>
+  <Method id="_121" name="pword" returns="_138" context="_44" location="f1:237" extern="1">
+    <Argument type="_50"/>
+  </Method>
+  <Method id="_122" name="pword" returns="_59" const="1" context="_44" location="f1:238" extern="1">
+    <Argument type="_50"/>
+  </Method>
+  <Method id="_123" name="iword" returns="_139" context="_44" location="f1:239" extern="1">
+    <Argument type="_50"/>
+  </Method>
+  <Method id="_124" name="iword" returns="_63" const="1" context="_44" location="f1:240" extern="1">
+    <Argument type="_50"/>
+  </Method>
+  <Constructor id="_125" name="ios" access="protected" context="_44" location="f1:479" extern="1">
+    <Argument name="sb" type="_48" default="0"/>
+    <Argument name="tie_to" type="_49" default="0"/>
+  </Constructor>
+  <Destructor id="_126" name="ios" access="protected" virtual="1" context="_44" location="f1:481" extern="1">
+  </Destructor>
+  <Method id="_127" name="init" returns="_47" access="protected" context="_44" location="f1:469" extern="1">
+    <Argument name="sb" type="_48"/>
+    <Argument name="tie_to" type="_49" default="0"/>
+  </Method>
+  <Struct id="_128" name="_ios_fields" context="_2" location="f1:86" members="_140 _141 _142 _143 _144 _145 _146 _147 _148 _149 _150 " bases=""/>
+  <Constructor id="_133" name="Init" context="_86" location="f1:251">
+    <Argument name="_ctor_arg" type="_151"/>
+  </Constructor>
+  <Constructor id="_134" name="Init" context="_86" location="f1:253" extern="1"/>
+  <ReferenceType id="_135" type="_44"/>
+  <ReferenceType id="_136" type="_44c"/>
+  <FundamentalType id="_137" name="wchar_t"/>
+  <ReferenceType id="_138" type="_59"/>
+  <ReferenceType id="_139" type="_63"/>
+  <Field id="_140" name="_strbuf" type="_48" context="_128" location="f1:87"/>
+  <Field id="_141" name="_tie" type="_49" context="_128" location="f1:88"/>
+  <Field id="_142" name="_width" type="_50" context="_128" location="f1:89"/>
+  <Field id="_143" name="_flags" type="_64" context="_128" location="f1:90"/>
+  <Field id="_144" name="_fill" type="_137" context="_128" location="f1:91"/>
+  <Field id="_145" name="_state" type="_60" context="_128" location="f1:92"/>
+  <Field id="_146" name="_exceptions" type="_60" context="_128" location="f1:93"/>
+  <Field id="_147" name="_precision" type="_50" context="_128" location="f1:94"/>
+  <Field id="_148" name="_arrays" type="_59" context="_128" location="f1:96"/>
+  <Constructor id="_149" name="_ios_fields" context="_128" location="f1:86">
+    <Argument name="_ctor_arg" type="_152"/>
+  </Constructor>
+  <Constructor id="_150" name="_ios_fields" context="_128" location="f1:86"/>
+  <ReferenceType id="_151" type="_86c"/>
+  <ReferenceType id="_152" type="_128c"/>
+  <Namespace id="_2" name="::"/>
+  <PointerType id="_129" type="_153"/>
+  <Struct id="_130" name="streambuf" context="_2" location="f1:287"/>
+  <FunctionType id="_132" returns="_135">
+    <Argument type="_135"/>
+  </FunctionType>
+  <FunctionType id="_131" returns="_51">
+    <Argument type="_51"/>
+  </FunctionType>
+  <FunctionType id="_153" returns="_50">
+    <Ellipsis/>
+  </FunctionType>
+  <File id="f0" name="/usr/i686-gcc295/include/g++-3/iostream.h"/>
+  <File id="f1" name="/usr/i686-gcc295/include/g++-3/streambuf.h"/>
+</GCC_XML>

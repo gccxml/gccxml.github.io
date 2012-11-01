@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+<!--#include file="Head.html"-->
+
+<body bgcolor="#FFFFFF" leftmargin=0 topmargin=0 text="black" link="#0000FF" 
+vlink="#000000" alink="#000000">
+
+<!--#include file="Table.html"-->
+
+<tr>
+<!--#include file="SideBar.html"-->
+
+    <td width="550" valign="top" bgcolor="#FFFFFF">
+    <div align="left">
+    Installing GCC-XML has been significantly
+    simplified by combining a patched GCC with the GCC-XML front-end
+    in a single source tree.  For those interested, the
+    <a href="OldInstall.html">old install instructions</a> are still
+    available.
+    <p>
+    This page covers the build and installation process of GCC-XML
+    from source.  Refer to the <a href="Download.html">Download</a>
+    page to get a copy of the source tree.
+    <p>
+    GCC-XML uses <a href="http://www.cmake.org">CMake</a> to support
+    building on many platforms.  A copy of CMake may be obtained from
+    the <a href="http://www.cmake.org/HTML/Download.html">CMake
+    download page</a>.  CMake will generate an appropriate build
+    system for your platform and compiler.
+    <p>
+    <h3>Windows</h3>
+    Run the CMakeSetup GUI and specify the GCC-XML tree for the source
+    directory.  Specify a directory of your choice as the build
+    directory (typically this is placed next to the source directory).
+    Select the desired build system generator from the drop down menu.
+    Use the GUI to generate a build system
+    for GCC-XML on your computer.  Then use the corresponding native
+    tools on your system to actually build GCC-XML.
+    <p>
+    When the build finishes, there will be a "<code>gccxml</code>"
+    executable in the <code>bin</code>, <code>bin/Debug</code>, or
+    <code>bin/Release</code> directory inside the build tree depending
+    on the build system you chose.  It may be run directly from this
+    location.  Installation from a build tree is not currently
+    supported on Windows.
+
+    <h3>UNIX & Cygwin</h3>
+    These instructions assume that GCC-XML will be built
+    out-of-source (recommended), but an in-source build should also
+    work.  The commands below assume that you have extracted the
+    source code into your home directory as <code>~/gccxml</code>
+    <blockquote>
+      <code>
+        $ mkdir gccxml-build<br>
+        $ cd gccxml-build<br>
+        $ cmake ../gccxml<br>
+        $ make<br>
+        $ make install<br>
+      </code>
+    </blockquote>
+    You can change the install prefix by adding
+    <code>-DCMAKE_INSTALL_PREFIX:PATH=/installation/path</code> to the
+    CMake command (default is <code>/usr/local</code>).  If you are
+    familiar with CMake, you should probably use the
+    <code>ccmake</code> curses dialog instead.
+    <p>
+    This will install an executable called "<code>gccxml</code>" in
+    <code>PREFIX/bin</code> and a supporting executable called
+    "<code>gccxml_cc1plus</code>".  Supporting files will also
+    be installed in <code>PREFIX/share/gccxml-<i>version</i></code>.
+    <p>
+    The "<code>make install</code>" step is optional.  The
+    <code>gccxml</code> executable may be run directly from the build
+    tree.  It will be located in <code>gccxml-build/bin</code>.
+    </div>
+    </td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
