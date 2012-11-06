@@ -41,10 +41,34 @@ vlink="#000000" alink="#000000">
 
     <td width="550" valign="top" bgcolor="#FFFFFF">
     <div align="left">
+    <b>This is the OLD download page and is obsolete.  See the main <a href="Download.html">Download</a> page.</b>
+    <p/>
     <font size=3>Downloading </font> GCC-XML may involve more than one
     component because are several ways to install it.  You should
     first read the <a href="Install.html">Install</a> page to
     determine what you need to download, and by what means.
+    <h2>Release 0.6.0</h2>
+    <b> THIS RELEASE WAS CREATED IN Februrary 2004 AND IS NOW VERY OLD.
+        PLEASE USE THE GIT VERSION.  DO NOT REPORT PROBLEMS WITH THIS RELEASE. </b>
+    <p/>
+    <table width="100%" cellspacing="1" bgcolor="#000000"><tr><td>
+    <table border="0" width="100%" cellspacing="0" bgcolor="#ffffff">
+    <tr class="table-heading" bgcolor="#e0e0e0"><td><b>Platform</b></td><td><b>Files</b></td></tr>
+
+    <tr><td>Windows (Installer)</td><td><a href="http://www.gccxml.org/files/v0.6/gccxml-0.6.0-win32.exe">gccxml-0.6.0-win32.exe</a></td></tr>
+    <tr><td>** not for cygwin **</td><td></td></tr>
+
+    <tr bgcolor="#f0f0f0"><td>Linux(x86)</td><td><a href="http://www.gccxml.org/files/v0.6/gccxml-0.6.0-x86-linux.tar.gz">gccxml-0.6.0-x86-linux.tar.gz</a></td></tr>
+    <tr bgcolor="#f0f0f0"><td></td><td><a href="http://www.gccxml.org/files/v0.6/gccxml-0.6.0-x86-linux.tar.Z">gccxml-0.6.0-x86-linux.tar.Z</a></td></tr>
+
+    <tr><td>IRIX64</td><td><a href="http://www.gccxml.org/files/v0.6/gccxml-0.6.0-irix64.tar.gz">gccxml-0.6.0-irix64.tar.gz</a></td></tr>
+    <tr><td></td><td><a href="http://www.gccxml.org/files/v0.6/gccxml-0.6.0-irix64.tar.Z">gccxml-0.6.0-irix64.tar.Z</a></td></tr>
+
+    <tr bgcolor="#f0f0f0"><td>Source</td><td><a href="http://www.gccxml.org/files/v0.6/gccxml-0.6.0.tar.gz">gccxml-0.6.0.tar.gz</a></td></tr>
+    <tr bgcolor="#f0f0f0"><td></td><td><a href="http://www.gccxml.org/files/v0.6/gccxml-0.6.0.tar.Z">gccxml-0.6.0.tar.Z</a></td></tr>
+    <tr bgcolor="#f0f0f0"><td></td><td><a href="http://www.gccxml.org/files/v0.6/gccxml-0.6.0.zip">gccxml-0.6.0.zip</a></td></tr>
+    </table>
+    </td></tr></table>
     <h2>Release 0.4.2</h2>
     <ul>Pre-compiled binaries:
       <li>Windows (InstallShield):<a href="http://www.gccxml.org/files/v0.4/gccxml-0.4.2-win32-installer.exe">gccxml-0.4.2-win32-installer.exe</a></li>
@@ -58,24 +82,6 @@ vlink="#000000" alink="#000000">
       <li>Pre-patched GCC 3.0.4: <a href="http://www.gccxml.org/files/v0.4/gccxml-0.4.2-cc1plus-304.tar.gz">gccxml-0.4.2-cc1plus-304.tar.gz</a></li>
       <li>Pre-patched GCC on Mac OS X: <a href="http://www.gccxml.org/files/v0.4/gccxml-0.4.2-cc1plus-osx.tar.gz">gccxml-0.4.2-cc1plus-osx.tar.gz</a></li>
     </ul>
-    <h2>Development Version from CVS</h2>
-    To use CVS, you must have it installed on your system. You may wish to
-    use the 
-    <a href="http://sources.redhat.com/cygwin/">Cygwin</a> tools on Windows
-    platforms, or <a href="http://www.wincvs.org">WinCVS</a> which provides 
-    a GUI to CVS.
-    <p>
-    The source is accessed by checking out a read-only version of the GCC-XML
-    source code. (Only developers have write-access to the repository. Contact
-    Kitware at kitware@kitware.com if you require write access.) Use
-    the following commands.
-    <p>
-    <b>cvs -d :pserver:anonymous@www.gccxml.org:/cvsroot/GCC_XML login</b><br>
-    (respond with password <code>gccxml</code>)
-    <p>
-    Follow this command by checking out the source code (this does not
-    include GCC's source):<br>
-    <b>cvs -d :pserver:anonymous@www.gccxml.org:/cvsroot/GCC_XML co GCC_XML</b>
     <h2>Older Versions</h2>
     This section lists files that provide older versions of GCC-XML.
     <ul>
@@ -87,9 +93,6 @@ vlink="#000000" alink="#000000">
         (<a href= "http://www.gccxml.org/files/v0.2/gccxml-0.2-win32-installer.exe">gccxml-0.2-win32-installer.exe</a>).
       <li> Version 0.2 <code>gccxml_cc1plus</code> Windows executable
         (<a href= "http://www.gccxml.org/files/v0.2/gccxml-0.2-win32-cc1plus.zip">gccxml-0.2-win32-cc1plus.zip</a>).
-      <li> Use the instructions below to perform a CVS checkout of the
-           GCC_XML source (does not include GCC source).  Version 0.2
-           can be obtained with CVS tag "<code>Release-0_2</code>".
     </ul>
     The following are not supported, but are provided for those who
     want them.
